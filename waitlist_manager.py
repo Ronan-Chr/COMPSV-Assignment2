@@ -90,25 +90,21 @@ def waitlist_generator():
             name = input("Enter customer name to add to front: ")
             print(waitlist.add_front(name))
             # Call the add_front method
-            
 
         elif choice == "2":
             name = input("Enter customer name to add to end: ")
             print(waitlist.add_end(name))
             # Call the add_end method
-            
 
         elif choice == "3":
             name = input("Enter customer name to remove: ")
             print(waitlist.remove(name))
             # Call the remove method
             
-            
         elif choice == "4":
             print("Current waitlist:")
             waitlist.print_list()
-            # Print out the entire linked list using the print_list method.
-            
+            # Print out the entire linked list using the print_list method. 
 
         elif choice == "5":
             print("Exiting waitlist manager.")

@@ -1,0 +1,18 @@
+Ronan Christie (Design Memo)
+-My waitlist proiject was made using a linked list which was used to store customer orders like a que inside a store like starbucks. 
+each customer becomes a node object inside the linked list which depends on what function was called to aadd it the two options being add to the start of the list or to the end of the list.
+The linked list repeats the order in which customers have been scheduled in the orders linked list until it reachs the end of the linked list where it points to None as the value for the end of the list indicating its over.
+The class for the linked list is used to manage the positions of the nodes as well as offer a way to remove them from the list for the edge case of a customer canceling an order for some reason or needing to leave the store.
+The add_end and add_front do the same thing in two different ways where add_end looks through the list until it finds the None value and it adds a new node to the list and pushes none back a spot in the linked list making it longer.
+The add_front does almost the same thing but tries to do the creation of a new node onject at the beggining of the linked list. 
+Theres also the inclusion of the remove function which is for taking someone off the order list which does so by matching the credentials already attatched to the node like name and then removing it from the list once matched. 
+The print method is just for display of the customers names from the linked list of node objects.
+
+The role the head of the lst plays is that it gives a start to the linked list for incersion. When the head is None that means theres nothing else before the list is detected to be empty.
+The head also gives a positional place for the node objects to get inserted so add_front actually adds to the front of the list and not just wherever it can giving an actual semantical useful structure to the order of the linked list. 
+The head for this program is the basis of what is in the customer list it shows us if its empty if its full and is used to reference the order that the customers orders should be fufilled.
+
+A real engineer might need a custom linked list like this when making a security system for an organization. Say a nuclear power plant facility which has lots of regulated materials throughout and information that needs clearance for employees to access
+a real custom linked list is a way you can manage employee access by just linking the employees names to an ID that works with a access card. Then in a program you can initialize permissions for things like "plant manager" has full access for any room or material on the grounds.
+The usage of removing adding and where people are added to different chain of command protocols like updating the employee to the top of the list if the keycard was used most recently also helping track who does what where within said facility. Theres lots of examples that can be used 
+this is just the first that came to mind.
